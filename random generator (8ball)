@@ -1,0 +1,46 @@
+#include <iostream>
+#include <cstdlib>
+
+int main() {
+
+  //Variables
+  srand(time(NULL));
+  int answer = std::rand() % 10;
+  
+
+  //standard line across all results
+  std::cout << "MAGIC 8-BALL\n";
+  if (answer == 0) {
+    std::cout << "It is certain.";
+  }
+  else if (answer == 1) {
+    std::cout << "It is decidedly so.";
+  }
+  else if (answer == 2) {
+    std::cout << "Without a doubt";
+  }
+  else if (answer == 3) {
+    std::cout << "Yes - defnitely";
+  }
+  else if (answer == 4) {
+    std::cout << "Reply hazy, try again";
+  }
+  else if (answer == 5) {
+    std::cout << "Don't count on it";
+  }
+  else if (answer == 6) {
+    std::cout << "Yes";
+  }
+  else if (answer == 7) {
+    std::cout << "Outlook not so good";
+  }
+  else if (answer == 8) {
+    std::cout << "Better not tell you now";
+  }
+  else if (answer == 9) {
+    std::cout << "Concentrate and ask again";
+  }
+  else if (answer == 10){
+    std::cout << "Very doubtful";
+  }
+}
