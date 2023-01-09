@@ -1,0 +1,55 @@
+/Rock crushes Lizard
+//Lizard poisons Spock
+//Spock smashes Scissors
+//Scissors cuts Paper
+//Paper disproves Spock
+//Spock vapourises Rock
+//Rock crushes Scissors
+//Scissors decapitates Lizard
+//Lizard eats Paper
+//Paper covers Rock
+
+#include <iostream>
+#include <stdlib.h>
+
+int main() {
+
+  srand (time(NULL));
+
+  int computer = rand() % 3 + 1;
+  int user = 0;
+
+  std::cout << "======================\n";
+  std::cout << "Rock, Paper, Scissors!\n";
+  std::cout << "======================\n";
+
+  std::cout << "1) Rock\n";
+  std::cout << "2) Paper\n";
+  std::cout << "3) Scissors\n";
+
+  std::cout << "Shoot!\n";
+
+  std::cin >> user;
+
+  if (user == 1 && computer == 2) {
+    std::cout << "Paper covers Rock, I win!\n";
+  }
+  else if (user == 1 && computer == 3) {
+    std::cout << "Rock smashes Scissors, you win!\n";
+  }
+  else if (user == 2 && computer == 1) {
+    std::cout << "Paper covers Rock! You win!\n";
+  }
+  else if (user == 2 && computer == 3) {
+    std::cout << "Scissors cuts paper! I win!\n";
+  }
+  else if (user == 3 && computer == 1) {
+    std::cout << "Rock smashes Scissors! I win!\n";
+  }
+  else if (user == 3 && computer == 2) {
+    std::cout << "Scissors cuts Paper! You win!\n";
+  }
+  else {
+    std::cout << "We drew!\n";
+  }
+}
